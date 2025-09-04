@@ -36,8 +36,8 @@ Spaces
 Preview
 alu230353-sr
 Copilot Chat
-Arquitectura de aplicaciones web explicada
-You said: 
+Arquitectura de aplicaciones web explicada  
+You said:   
 <ins># 2.Arquitectura de aplicaciones web </ins>
 Copilot said: La arquitectura de aplicaciones web se refiere
 La arquitectura de aplicaciones web se refiere a la estructura y diseño fundamental que define cómo los componentes de una aplicación web interactúan entre sí y con el usuario final. Es clave para garantizar escalabilidad, seguridad, rendimiento y facilidad de mantenimiento.
