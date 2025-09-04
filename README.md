@@ -42,6 +42,8 @@ El desarrollo web es el proceso de crear sitios y aplicaciones accesibles a trav
 - **Descripción:** Aplicaciones web que ofrecen características avanzadas como funcionamiento offline, notificaciones push y acceso a hardware, acercándose a la experiencia de una app nativa.
 - **Tecnologías:** Service Workers, Manifest, tecnologías modernas de JavaScript.
 - **Ejemplo:** Twitter Lite, Spotify Web.
+- <img width="299" height="164" alt="image" src="https://github.com/user-attachments/assets/a004f572-7715-45dd-9203-11f13bda93c5" />
+
 
 Historia y evolución del desarrollo web  
 Tipos de aplicaciones web (estáticas, dinámicas, SPA, PWA)  
@@ -98,6 +100,8 @@ Consiste en diseñar primero la interfaz de programación de la aplicación (API
 El contrato de la API se define desde el inicio (por ejemplo, usando OpenAPI/Swagger).
 Permite que equipos de frontend y backend trabajen en paralelo.
 Facilita la integración con otros servicios y clientes.
+<img width="298" height="162" alt="image" src="https://github.com/user-attachments/assets/9cf59fb1-81d8-40fb-87b0-46d70f7a1df0" />
+
 Ventajas:
 
 Desarrollo más ágil.
@@ -125,7 +129,9 @@ Sistema de gestión de bases de datos relacional, utilizado para almacenar y org
 **Relación entre tecnologías:**  
 - HTML, CSS y JavaScript trabajan juntos en el frontend (lado del cliente).
 - PHP y MySQL suelen formar parte del backend (lado del servidor), donde PHP procesa la lógica y MySQL almacena los datos.
-- Una aplicación web típica recibe solicitudes del usuario en el frontend, las procesa en el backend y almacena/recupera información de la base de datos.  
+- Una aplicación web típica recibe solicitudes del usuario en el frontend, las procesa en el backend y almacena/recupera información de la base de datos.
+- <img width="273" height="149" alt="image" src="https://github.com/user-attachments/assets/7e13ba06-27f7-4856-956b-b29c65032477" />
+
 
 HTML, CSS, JavaScript, PHP, MySQL  
 <ins># 4.-Control de versiones </ins>
@@ -173,6 +179,8 @@ El flujo de trabajo típico con Git y GitHub consiste en:
   `git push origin feature/nueva-funcionalidad`
 - Crear un Pull Request en GitHub.
 - Revisar y fusionar los cambios en la rama principal.
+- <img width="329" height="153" alt="image" src="https://github.com/user-attachments/assets/77e322b1-cd15-4c23-9ec6-e55f9a74ec98" />
+
 
 **Ventajas:**
 
@@ -212,6 +220,8 @@ Pasos básicos:
 Definir qué datos necesita el frontend.
 Hacer llamadas HTTP (GET, POST, PUT, DELETE) a la API.
 Mostrar los datos recibidos en la interfaz.
+<img width="300" height="150" alt="image" src="https://github.com/user-attachments/assets/b7dde063-0c6c-4592-95d6-3e1776193d5f" />
+
 
 Maquetación/Wireframe/Mockup  
 API  
@@ -257,6 +267,7 @@ const client = new MongoClient(uri);
 await client.connect();
 const db = client.db('nombre_bd');
 El backend realiza operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre la base de datos según las peticiones del cliente.
+<img width="306" height="149" alt="image" src="https://github.com/user-attachments/assets/0edfd4c0-db1a-4db3-951a-6d0f2a99df2b" />
 
 
 Servidor  
@@ -321,6 +332,8 @@ usuario = session.query(Usuario).filter_by(id=1).first()
 # Update
 usuario.nombre = "Ana María"
 session.commit()
+<img width="268" height="161" alt="image" src="https://github.com/user-attachments/assets/75d6ef9d-f69e-417d-b650-a210402a92af" />
+
 
 # Delete
 session.delete(usuario)
@@ -417,6 +430,7 @@ else:
 - **Autenticar usuarios antes de permitir el acceso a funciones sensibles.**
 - **Autorizar el acceso según roles y permisos definidos.**
 - **Aplicar buenas prácticas de seguridad y mantenerse actualizado sobre vulnerabilidades comunes.**
+<img width="284" height="136" alt="image" src="https://github.com/user-attachments/assets/ab05ec74-8af9-4396-9f4e-9525b7ccbd3e" />
 
 Validación de formularios  
 Autenticación y autorización   
@@ -463,6 +477,8 @@ app.post('/api/registrar', (req, res) => {
   // Procesar datos recibidos del frontend
   // Guardar en base de datos
   res.json({ mensaje: 'Registro exitoso' });
+<img width="286" height="158" alt="image" src="https://github.com/user-attachments/assets/bba526d3-1a1b-4126-b4e2-65a4faa28044" />
+
 
 <ins># 2.- Almacenamiento en Servidor </ins>
 ### Tipos de servidores
@@ -486,7 +502,9 @@ app.post('/api/registrar', (req, res) => {
 - **Microsoft Azure:** Incluye Blob Storage, Disk Storage, File Storage.
 - **DigitalOcean:** Ofrece espacios de almacenamiento en la nube.
 - **Dropbox, OneDrive, Google Drive:** Soluciones orientadas a usuarios finales para almacenamiento y sincronización de archivos.
-- **OVH, Hostinger, SiteGround:** Proveedores tradicionales de hosting y almacenamiento web.  
+- **OVH, Hostinger, SiteGround:** Proveedores tradicionales de hosting y almacenamiento web.
+<img width="283" height="158" alt="image" src="https://github.com/user-attachments/assets/e7af8c27-c71d-479b-b2ac-31b596ca18b3" />
+
 Tipos de servidores   
 Servidores y servicios de hosting   
 Proveedores de Servicios de Almacenamiento  
@@ -535,6 +553,8 @@ Documentar dependencias y scripts.
 Incluir guía de despliegue y configuración.
 Uso de herramientas como JSDoc, Swagger (para APIs).
 Mantener la documentación actualizada y clara.
+<img width="276" height="156" alt="image" src="https://github.com/user-attachments/assets/21b315b4-a184-4005-84c8-67c49f42c45d" />
+
 
   
 Optimización de recursos (imágenes, scripts)  
