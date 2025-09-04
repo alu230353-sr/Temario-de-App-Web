@@ -464,7 +464,29 @@ app.post('/api/registrar', (req, res) => {
   // Guardar en base de datos
   res.json({ mensaje: 'Registro exitoso' });
 
-2.- Almacenamiento en Servidor  
+<ins># 2.- Almacenamiento en Servidor </ins>
+### Tipos de servidores
+- **Servidor de archivos:** Almacena y distribuye archivos a través de la red. Ejemplo: Samba, FTP.
+- **Servidor web:** Almacena y sirve páginas web. Ejemplo: Apache, Nginx.
+- **Servidor de bases de datos:** Almacena información estructurada y permite consultas. Ejemplo: MySQL, PostgreSQL.
+- **Servidor de aplicaciones:** Ejecuta aplicaciones y gestiona su almacenamiento interno.
+- **Servidor de correo:** Almacena y gestiona correos electrónicos. Ejemplo: Microsoft Exchange, Postfix.
+- **Servidor de copias de seguridad:** Realiza y almacena respaldos de datos críticos.
+
+### Servidores y servicios de hosting
+- **Hosting compartido:** Varios sitios web comparten los recursos de un mismo servidor físico.
+- **VPS (Servidor Privado Virtual):** Un solo servidor físico se divide en múltiples servidores virtuales independientes.
+- **Hosting dedicado:** El cliente alquila un servidor físico completo para su uso exclusivo.
+- **Hosting en la nube:** Recursos flexibles y escalables, distribuidos en varios servidores físicos (Ejemplo: AWS, Azure, Google Cloud).
+- **Colocación:** El cliente instala su propio hardware en el centro de datos del proveedor.
+
+### Proveedores de Servicios de Almacenamiento
+- **Amazon Web Services (AWS):** Ofrece almacenamiento S3, EBS, Glacier, entre otros.
+- **Google Cloud Platform:** Proporciona Cloud Storage, Filestore, y otros servicios.
+- **Microsoft Azure:** Incluye Blob Storage, Disk Storage, File Storage.
+- **DigitalOcean:** Ofrece espacios de almacenamiento en la nube.
+- **Dropbox, OneDrive, Google Drive:** Soluciones orientadas a usuarios finales para almacenamiento y sincronización de archivos.
+- **OVH, Hostinger, SiteGround:** Proveedores tradicionales de hosting y almacenamiento web.  
 Tipos de servidores   
 Servidores y servicios de hosting   
 Proveedores de Servicios de Almacenamiento  
