@@ -128,7 +128,57 @@ Sistema de gestión de bases de datos relacional, utilizado para almacenar y org
 - Una aplicación web típica recibe solicitudes del usuario en el frontend, las procesa en el backend y almacena/recupera información de la base de datos.  
 
 HTML, CSS, JavaScript, PHP, MySQL  
-4.-Control de versiones  
+<ins># 4.-Control de versiones </ins>
+### 4.-Control de versiones
+
+El **control de versiones** es una práctica fundamental en el desarrollo de software que permite gestionar y mantener el historial de cambios en archivos y proyectos. Esto facilita la colaboración, el seguimiento de modificaciones y la recuperación de versiones anteriores si es necesario.
+
+#### Git
+
+**Git** es el sistema de control de versiones más popular y utilizado actualmente. Es distribuido, lo que significa que cada desarrollador tiene una copia completa del repositorio y su historial. Las principales características de Git son:
+
+- **Seguimiento de cambios** en el código fuente.
+- **Trabajo colaborativo** entre varios desarrolladores.
+- **Creación de ramas** para desarrollar nuevas funcionalidades sin afectar el código principal.
+- **Fusión (merge)** de ramas para integrar cambios.
+
+#### GitHub
+
+**GitHub** es una plataforma en la nube que utiliza Git para alojar repositorios y facilitar la colaboración entre desarrolladores. GitHub ofrece herramientas adicionales como gestión de proyectos, seguimiento de issues, revisión de código y acciones automáticas (GitHub Actions).
+
+#### Flujo de trabajo con ramas (branching, merge, pull requests)
+
+El flujo de trabajo típico con Git y GitHub consiste en:
+
+1. **Branching (ramificación):**  
+   Se crea una rama para trabajar en una nueva funcionalidad o corregir un error. Esto permite desarrollar de forma aislada sin afectar la rama principal (`main` o `master`).
+
+2. **Desarrollo en la rama:**  
+   Se realizan los cambios y se van guardando con **commits**.
+
+3. **Merge (fusión):**  
+   Una vez terminados los cambios, se integra la rama al proyecto principal. Esto se hace mediante la operación de **merge**.
+
+4. **Pull Request (Solicitud de extracción):**  
+   En GitHub, se crea un **pull request** para solicitar que los cambios realizados en una rama sean revisados y fusionados con la rama principal. Otros miembros del equipo pueden revisar el código, dar comentarios y aprobar la integración.
+
+**Ejemplo de flujo de trabajo:**
+
+- Crear una rama:  
+  `git checkout -b feature/nueva-funcionalidad`
+- Realizar cambios y hacer commits:  
+  `git add .`  
+  `git commit -m "Implementa nueva funcionalidad"`
+- Subir la rama al repositorio remoto:  
+  `git push origin feature/nueva-funcionalidad`
+- Crear un Pull Request en GitHub.
+- Revisar y fusionar los cambios en la rama principal.
+
+**Ventajas:**
+
+- Permite trabajo colaborativo y organizado.
+- Facilita la revisión y control de cambios.
+- Reduce el riesgo de errores al trabajar en paralelo.
 Git y GitHub  
 Flujo de trabajo con ramas (branching, merge, pull requests)  
 
