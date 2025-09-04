@@ -491,7 +491,52 @@ Tipos de servidores
 Servidores y servicios de hosting   
 Proveedores de Servicios de Almacenamiento  
 
-3.-Optimización y rendimiento  
+<ins># 3.-Optimización y rendimiento </ins>
+Copilot said: Parece que estás organizando los temas para
+Parece que estás organizando los temas para un apartado de “Optimización y Rendimiento” en el contexto de desarrollo web. Aquí tienes una breve explicación para cada punto y recomendaciones sobre qué incluir en tu temario/documentación:
+
+3. Optimización y rendimiento
+1. Optimización de recursos (imágenes, scripts)
+Imágenes:
+Utiliza formatos modernos (WebP, AVIF).
+Comprime imágenes sin perder calidad.
+Usa srcset para imágenes responsivas.
+Lazy loading para cargar imágenes solo cuando se necesitan.
+Scripts:
+Minimiza y combina archivos JS/CSS.
+Utiliza carga asíncrona o diferida (async/defer).
+Elimina dependencias innecesarias.
+Usa herramientas como Webpack, esbuild, Parcel.
+2. Despliegue de aplicaciones web
+Preparación:
+Configura entorno de producción (variables, minificación, build).
+Elimina archivos y dependencias innecesarias.
+Opciones de despliegue:
+Plataformas: Vercel, Netlify, GitHub Pages, Heroku, AWS, etc.
+Utiliza CDN para servir contenido estático.
+Configura HTTPS y seguridad básica.
+Automatización:
+Scripts de despliegue (ej: npm scripts).
+Documenta proceso de despliegue.
+3. CI/CD básico
+Conceptos:
+¿Qué es CI/CD? (Integración continua y entrega/despliegue continuo).
+Herramientas:
+GitHub Actions, GitLab CI, Travis CI.
+Pipeline básico:
+Ejemplo: ejecutar tests + build + deploy en cada push/pull request.
+Notificaciones y checkpoints.
+Ventajas:
+Automatización, calidad, rapidez, menos errores humanos.
+4. Documentación del proyecto
+README.md:
+Descripción del proyecto, instalación, uso, ejemplos.
+Documentar dependencias y scripts.
+Incluir guía de despliegue y configuración.
+Uso de herramientas como JSDoc, Swagger (para APIs).
+Mantener la documentación actualizada y clara.
+
+  
 Optimización de recursos (imágenes, scripts)  
 Despliegue de aplicaciones web  
 CI/CD básico  
