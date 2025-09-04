@@ -56,48 +56,53 @@ Copilot Chat
 Arquitectura de aplicaciones web explicada  
 You said:   
 <ins># 2.Arquitectura de aplicaciones web </ins>
-Copilot said: La arquitectura de aplicaciones web se refiere
-La arquitectura de aplicaciones web se refiere a la estructura y diseño fundamental que define cómo los componentes de una aplicación web interactúan entre sí y con el usuario final. Es clave para garantizar escalabilidad, seguridad, rendimiento y facilidad de mantenimiento.
+Cliente-Servidor
+La arquitectura cliente-servidor separa las responsabilidades entre dos entidades principales:
 
-Componentes principales de una arquitectura web
-Cliente (Frontend):
+Cliente: El cliente es generalmente el navegador web o una aplicación que solicita servicios o datos al servidor. Se encarga de la interfaz de usuario y la experiencia interactiva.
+Servidor: El servidor recibe las solicitudes del cliente, procesa la lógica de negocio, accede a la base de datos y devuelve los resultados al cliente. Permite centralizar la gestión, la seguridad y el almacenamiento de datos.
+Ventajas:
 
-Es la parte visual con la que interactúa el usuario, generalmente desarrollada con HTML, CSS y JavaScript.
-Puede incluir frameworks como React, Angular, o Vue.js.
-Servidor (Backend):
+Separación de responsabilidades.
+Mejor escalabilidad y mantenimiento.
+Facilita la reutilización de componentes.
+Arquitectura de tres capas (Presentación, Lógica, Datos)
+Es una evolución del modelo cliente-servidor y divide la aplicación en tres capas independientes:
 
-Es el responsable de procesar la lógica de negocio, acceder a bases de datos y gestionar la autenticación.
-Suele estar construido con lenguajes como Python (Django, Flask), JavaScript (Node.js), Ruby, Java, etc.
-Base de datos:
+Capa de Presentación:
+La interfaz que interactúa directamente con el usuario (HTML, CSS, JavaScript).
+Capa de Lógica de Negocio:
+Gestiona las reglas, procesos y funcionalidades principales de la aplicación (por ejemplo, los controladores en frameworks como Django o Spring).
+Capa de Datos:
+Se encarga del almacenamiento, recuperación y gestión de datos (bases de datos SQL/NoSQL).
+Ventajas:
 
-Almacena y gestiona los datos de la aplicación.
-Ejemplos: MySQL, PostgreSQL, MongoDB.
-Servicios externos:
+Mejor organización del código.
+Facilita el mantenimiento y la escalabilidad.
+Permite cambios en una capa sin afectar a las demás.
+REST y API-first Design
+REST (Representational State Transfer)
+Es un estilo de arquitectura para el diseño de servicios web:
 
-APIs, servicios de autenticación, almacenamiento en la nube, etc.
-Tipos de arquitectura de aplicaciones web
-Monolítica:
+Utiliza las operaciones HTTP estándar (GET, POST, PUT, DELETE).
+Los recursos se identifican mediante URLs.
+Se basa en la transferencia de representaciones (JSON, XML).
+Es stateless (cada petición contiene toda la información necesaria).
+Ventajas:
 
-Toda la lógica de la aplicación (frontend, backend, base de datos) está en un solo proyecto.
-Ventaja: Fácil de desarrollar y desplegar.
-Desventaja: Difícil de escalar y mantener a largo plazo.
-Cliente-Servidor:
+Simplicidad y flexibilidad.
+Interoperabilidad entre sistemas.
+API-first Design
+Consiste en diseñar primero la interfaz de programación de la aplicación (API) antes de implementar la lógica interna:
 
-Separación clara entre el cliente y el servidor.
-El cliente envía solicitudes al servidor, que las procesa y responde.
-Microservicios:
+El contrato de la API se define desde el inicio (por ejemplo, usando OpenAPI/Swagger).
+Permite que equipos de frontend y backend trabajen en paralelo.
+Facilita la integración con otros servicios y clientes.
+Ventajas:
 
-La aplicación se divide en pequeños servicios independientes que se comunican entre sí.
-Permite escalabilidad y despliegue independiente de cada servicio.
-Sin servidor (Serverless):
-
-El backend se ejecuta en servicios gestionados por proveedores en la nube (como AWS Lambda).
-Los desarrolladores solo escriben la lógica, sin preocuparse por la infraestructura.
-Flujo típico de una aplicación web
-El usuario interactúa con la interfaz web (frontend).
-El frontend envía solicitudes HTTP al backend (servidor).
-El backend procesa la solicitud, accede a la base de datos si es necesario y responde.
-El frontend muestra la información al usuario.
+Desarrollo más ágil.
+Mejor documentación y mantenibilidad.
+Facilita la escalabilidad y la reutilización.
 Cliente-Servidor  
 Arquitectura de tres capas (presentación, lógica, datos)  
 REST y API-first design  
