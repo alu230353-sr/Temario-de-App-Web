@@ -421,7 +421,7 @@ else:
 Validación de formularios  
 Autenticación y autorización   
 
-Propósito de Aprendizaje 3: Implementar y desplegar una aplicación web funcional  
+## Propósito de Aprendizaje 3: Implementar y desplegar una aplicación web funcional  
 1. -Integración de frontend y backend  
 Interfaz de usuario Frontend  
 Manejo de API  
