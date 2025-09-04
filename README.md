@@ -1,6 +1,31 @@
 # Temario-de-App-Web
 ## Propósito de Aprendizaje 1: Comprender los fundamentos del desarrollo de aplicaciones web.  
-1.-Introducción al desarrollo web  
+1.-Introducción al desarrollo web </ins>
+El desarrollo web es el proceso de crear sitios y aplicaciones accesibles a través de Internet. Involucra una combinación de tecnologías, lenguajes de programación y buenas prácticas para construir páginas web estáticas (contenido fijo) y dinámicas (interactividad y actualización de datos).
+
+Áreas principales del desarrollo web:
+
+Frontend (lado del cliente):
+Es la parte visual e interactiva con la que el usuario interactúa directamente. Se utilizan tecnologías como HTML (estructura), CSS (estilos) y JavaScript (comportamiento e interactividad).
+
+Backend (lado del servidor):
+Gestiona la lógica, almacenamiento de datos y procesamiento detrás de la web. Se utilizan lenguajes como Python, PHP, Java, Node.js, entre otros, junto con bases de datos (MySQL, MongoDB, etc.).
+
+Full Stack:
+Un desarrollador full stack domina tanto el frontend como el backend.
+
+Aspectos clave:
+
+Responsive Design: Adaptar la web a diferentes dispositivos (móviles, tablets, PCs).
+Seguridad: Proteger los datos y la información de los usuarios.
+Rendimiento: Optimizar la velocidad de carga y respuesta.
+Accesibilidad: Garantizar que todos los usuarios puedan acceder al contenido.
+Herramientas populares:
+
+Editores de código (VS Code, Sublime Text)
+Frameworks (React, Angular, Django, Laravel)
+Sistemas de control de versiones (Git/GitHub)
+
 Historia y evolución del desarrollo web  
 Tipos de aplicaciones web (estáticas, dinámicas, SPA, PWA)  
 2.Arquitectura de aplicaciones web  
