@@ -262,7 +262,69 @@ El backend realiza operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre la
 Servidor  
 Manejo de peticiones y respuestas HTTP  
 Conexión a bases de datos (MySQL, PostgreSQL, MongoDB)  
-3.-Bases de datos  
+<ins># 3.-Bases de datos  </ins>
+Modelado de datos y relaciones
+El modelado de datos es el proceso de definir cómo se almacenará la información en la base de datos. Esto incluye:
+
+Tablas: Representan entidades (por ejemplo, Usuarios, Productos).
+Campos: Son los atributos de cada entidad (por ejemplo, nombre, correo, precio).
+Relaciones: Definen cómo se conectan las entidades entre sí. Las principales son:
+Uno a uno (1:1): Un registro de una tabla se asocia con uno de otra.
+Uno a muchos (1:N): Un registro de una tabla se asocia con varios de otra.
+Muchos a muchos (N:M): Varios registros de una tabla se asocian con varios de otra (requiere una tabla intermedia).
+Ejemplo:
+
+plaintext
+Usuarios (id, nombre, email)
+Posts (id, titulo, contenido, usuario_id)
+Relación: Un usuario puede tener muchos posts (1:N)
+ORM (Object Relational Mapping)
+Un ORM es una herramienta que permite interactuar con la base de datos usando objetos y clases en el lenguaje de programación, en vez de escribir directamente las sentencias SQL.
+
+Ventajas:
+
+Facilita el trabajo con la base de datos.
+Hace el código más mantenible y seguro.
+Permite migraciones automáticas del esquema.
+Ejemplo de ORMs populares:
+
+Django ORM (Python)
+SQLAlchemy (Python)
+TypeORM (Node.js)
+Hibernate (Java)
+Ejemplo (Python con SQLAlchemy):
+
+Python
+class Usuario(Base):
+    __tablename__ = 'usuarios'
+    id = Column(Integer, primary_key=True)
+    nombre = Column(String)
+    email = Column(String)
+CRUD desde el backend
+CRUD son las operaciones básicas para gestionar datos en una base de datos:
+
+Create: Crear un nuevo registro.
+Read: Leer/consultar registros existentes.
+Update: Modificar registros existentes.
+Delete: Eliminar registros.
+Ejemplo de CRUD usando un ORM (pseudo-código):
+
+Python
+# Create
+nuevo_usuario = Usuario(nombre="Ana", email="ana@email.com")
+session.add(nuevo_usuario)
+session.commit()
+
+# Read
+usuario = session.query(Usuario).filter_by(id=1).first()
+
+# Update
+usuario.nombre = "Ana María"
+session.commit()
+
+# Delete
+session.delete(usuario)
+session.commit()
  Modelado de datos y relaciones  
 ORM (Object Relational Mapping)  
 CRUD desde el backend  
