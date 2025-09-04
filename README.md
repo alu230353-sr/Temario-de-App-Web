@@ -422,10 +422,47 @@ Validación de formularios
 Autenticación y autorización   
 
 ## Propósito de Aprendizaje 3: Implementar y desplegar una aplicación web funcional  
-1. -Integración de frontend y backend  
+<ins># 1. -Integración de frontend y backend </ins> 
 Interfaz de usuario Frontend  
 Manejo de API  
-Proceso de Solicitud y Respuesta de Backend  
+Proceso de Solicitud y Respuesta de Backend
+## 1.1 Interfaz de Usuario Frontend
+El frontend es la parte de la aplicación con la que interactúa el usuario. Se desarrolla normalmente con tecnologías como HTML, CSS y JavaScript, y frameworks como React, Angular o Vue.js.  
+La interfaz debe ser intuitiva, responsiva y atractiva para los usuarios.
+
+**Ejemplo:**
+```html
+<button onclick="enviarSolicitud()">Enviar</button>
+```
+
+## 1.2 Manejo de API
+El frontend se comunica con el backend a través de APIs (Application Programming Interface), generalmente usando HTTP (REST o GraphQL).  
+Las APIs permiten al frontend enviar datos al backend y recibir respuestas para actualizar la interfaz.
+
+**Ejemplo:**
+```javascript
+fetch('https://miapp.com/api/usuarios', { method: 'GET' })
+  .then(respuesta => respuesta.json())
+  .then(data => mostrarUsuarios(data));
+```
+
+## 1.3 Proceso de Solicitud y Respuesta de Backend
+El proceso inicia cuando el usuario realiza una acción en el frontend (por ejemplo, enviar un formulario).  
+El frontend envía una solicitud al backend, el backend procesa la petición (acceso a base de datos, lógica de negocio) y responde al frontend con datos o confirmaciones.
+
+**Flujo básico:**
+1. Usuario ingresa información en la interfaz.
+2. Frontend envía la solicitud al backend vía API.
+3. Backend recibe la solicitud, la procesa y accede a la base de datos si es necesario.
+4. Backend envía una respuesta (éxito, error, datos).
+5. Frontend actualiza la interfaz según la respuesta.
+
+**Ejemplo de backend en Node.js:**
+```js
+app.post('/api/registrar', (req, res) => {
+  // Procesar datos recibidos del frontend
+  // Guardar en base de datos
+  res.json({ mensaje: 'Registro exitoso' });
 
 2.- Almacenamiento en Servidor  
 Tipos de servidores   
