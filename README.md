@@ -183,7 +183,36 @@ Git y GitHub
 Flujo de trabajo con ramas (branching, merge, pull requests)  
 
 Propósito de Aprendizaje 2: Desarrollar componentes y funcionalidades de una aplicación web  
-1.-Diseño e implementación del frontend  
+<ins># 1.-Diseño e implementación del frontend </ins>
+A. Maquetación / Wireframe / Mockup
+Maquetación:
+Es el proceso de estructurar visualmente la interfaz. Se define la ubicación de los elementos (menús, botones, formularios, etc.) en la página, generalmente usando cajas y líneas sin detalles gráficos.
+
+Wireframe:
+Es un boceto de baja fidelidad. Sirve para mostrar la estructura y navegación del sitio/app. Herramientas populares: Figma, Sketch, Adobe XD, Balsamiq.
+
+Mockup:
+Es una representación visual más detallada (alta fidelidad) de la interfaz. Incluye colores, tipografías, imágenes y estilos.
+
+Ejemplo de proceso:
+
+Bocetar la estructura en papel o digital (Wireframe).
+Refinar el diseño añadiendo color, fuentes, imágenes (Mockup).
+Traducir el diseño a HTML/CSS/JS (Maquetación en código).
+B. API (Interfaz de Programación de Aplicaciones)
+El frontend suele consumir datos de una API (normalmente REST o GraphQL).
+La API provee endpoints para obtener, crear, modificar o eliminar información.
+Ejemplo:
+js
+fetch('https://api.ejemplo.com/usuarios')
+  .then(response => response.json())
+  .then(data => mostrarUsuarios(data));
+Pasos básicos:
+
+Definir qué datos necesita el frontend.
+Hacer llamadas HTTP (GET, POST, PUT, DELETE) a la API.
+Mostrar los datos recibidos en la interfaz.
+
 Maquetación/Wireframe/Mockup  
 API  
 2.-Diseño e implementación del backend  
