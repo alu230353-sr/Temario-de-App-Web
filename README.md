@@ -84,7 +84,7 @@ El frontend muestra la información al usuario.
 Cliente-Servidor  
 Arquitectura de tres capas (presentación, lógica, datos)  
 REST y API-first design  
-3. -Lenguajes y tecnologías fundamentales
+<ins># 3. -Lenguajes y tecnologías fundamentales </ins>
 **HTML (HyperText Markup Language):**  
 Es el lenguaje básico de marcado para crear la estructura de las páginas web. Define elementos como títulos, párrafos, enlaces, imágenes, listas y más. Es esencial para dar forma y organización al contenido.
 
