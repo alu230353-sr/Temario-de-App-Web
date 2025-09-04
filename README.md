@@ -28,7 +28,59 @@ Sistemas de control de versiones (Git/GitHub)
 
 Historia y evolución del desarrollo web  
 Tipos de aplicaciones web (estáticas, dinámicas, SPA, PWA)  
-2.Arquitectura de aplicaciones web  
+2.Arquitectura de aplicaciones web 
+Share
+
+New chat
+Spaces
+Preview
+alu230353-sr
+Copilot Chat
+Arquitectura de aplicaciones web explicada
+You said: 
+<ins># 2.Arquitectura de aplicaciones web </ins>
+Copilot said: La arquitectura de aplicaciones web se refiere
+La arquitectura de aplicaciones web se refiere a la estructura y diseño fundamental que define cómo los componentes de una aplicación web interactúan entre sí y con el usuario final. Es clave para garantizar escalabilidad, seguridad, rendimiento y facilidad de mantenimiento.
+
+Componentes principales de una arquitectura web
+Cliente (Frontend):
+
+Es la parte visual con la que interactúa el usuario, generalmente desarrollada con HTML, CSS y JavaScript.
+Puede incluir frameworks como React, Angular, o Vue.js.
+Servidor (Backend):
+
+Es el responsable de procesar la lógica de negocio, acceder a bases de datos y gestionar la autenticación.
+Suele estar construido con lenguajes como Python (Django, Flask), JavaScript (Node.js), Ruby, Java, etc.
+Base de datos:
+
+Almacena y gestiona los datos de la aplicación.
+Ejemplos: MySQL, PostgreSQL, MongoDB.
+Servicios externos:
+
+APIs, servicios de autenticación, almacenamiento en la nube, etc.
+Tipos de arquitectura de aplicaciones web
+Monolítica:
+
+Toda la lógica de la aplicación (frontend, backend, base de datos) está en un solo proyecto.
+Ventaja: Fácil de desarrollar y desplegar.
+Desventaja: Difícil de escalar y mantener a largo plazo.
+Cliente-Servidor:
+
+Separación clara entre el cliente y el servidor.
+El cliente envía solicitudes al servidor, que las procesa y responde.
+Microservicios:
+
+La aplicación se divide en pequeños servicios independientes que se comunican entre sí.
+Permite escalabilidad y despliegue independiente de cada servicio.
+Sin servidor (Serverless):
+
+El backend se ejecuta en servicios gestionados por proveedores en la nube (como AWS Lambda).
+Los desarrolladores solo escriben la lógica, sin preocuparse por la infraestructura.
+Flujo típico de una aplicación web
+El usuario interactúa con la interfaz web (frontend).
+El frontend envía solicitudes HTTP al backend (servidor).
+El backend procesa la solicitud, accede a la base de datos si es necesario y responde.
+El frontend muestra la información al usuario.
 Cliente-Servidor  
 Arquitectura de tres capas (presentación, lógica, datos)  
 REST y API-first design  
