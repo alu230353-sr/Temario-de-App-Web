@@ -182,7 +182,7 @@ El flujo de trabajo típico con Git y GitHub consiste en:
 Git y GitHub  
 Flujo de trabajo con ramas (branching, merge, pull requests)  
 
-Propósito de Aprendizaje 2: Desarrollar componentes y funcionalidades de una aplicación web  
+## Propósito de Aprendizaje 2: Desarrollar componentes y funcionalidades de una aplicación web  
 <ins># 1.-Diseño e implementación del frontend </ins>
 A. Maquetación / Wireframe / Mockup
 Maquetación:
