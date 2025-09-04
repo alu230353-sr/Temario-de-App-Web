@@ -328,7 +328,96 @@ session.commit()
  Modelado de datos y relaciones  
 ORM (Object Relational Mapping)  
 CRUD desde el backend  
-4.-Seguridad básica en aplicaciones web  
+<ins># 4.-Seguridad básica en aplicaciones web  </ins>
+La seguridad es un pilar fundamental en el desarrollo de aplicaciones web. En este apartado se tratan dos conceptos clave: la **validación de formularios** y los mecanismos de **autenticación y autorización**.
+
+---
+
+## 4.1 Validación de formularios
+
+La validación de formularios consiste en comprobar que los datos introducidos por el usuario cumplen ciertos requisitos antes de ser procesados por el servidor. Esto ayuda a prevenir vulnerabilidades como la inyección de código, errores y comportamientos inesperados.
+
+### Tipos de validación
+
+1. **Validación en el cliente (Front-end):**
+   - Se realiza usando JavaScript o atributos HTML (`required`, `pattern`, etc).
+   - Proporciona retroalimentación inmediata al usuario.
+   - Ejemplo:
+     ```html
+     <form>
+       <input type="email" required>
+       <input type="password" pattern="[A-Za-z0-9]{8,}">
+     </form>
+     ```
+
+2. **Validación en el servidor (Back-end):**
+   - Se realiza después de recibir los datos del formulario.
+   - Es imprescindible, ya que la validación en el cliente puede ser manipulada o ignorada.
+   - Ejemplo en Python (Flask):
+     ```python
+     email = request.form.get('email')
+     if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+         flash("Email inválido")
+     ```
+
+### Buenas prácticas
+
+- Nunca confiar solo en la validación del cliente.
+- Validar el tipo, formato y rango de los datos.
+- Escapar los datos para evitar inyección de código.
+- Mostrar mensajes claros al usuario en caso de error.
+
+---
+
+## 4.2 Autenticación y autorización
+
+### Autenticación
+
+La **autenticación** es el proceso de verificar la identidad de un usuario. Los métodos más comunes incluyen:
+
+- **Contraseña:** El usuario proporciona una contraseña secreta.
+- **Autenticación de dos factores (2FA):** Se requiere una segunda prueba de identidad (SMS, app, correo).
+- **OAuth:** Permite autenticarse usando proveedores externos (Google, GitHub).
+
+Ejemplo básico de autenticación (Python Flask):
+```python
+if usuario and usuario.verificar_contraseña(password):
+    session['usuario_id'] = usuario.id
+else:
+    flash('Credenciales incorrectas')
+```
+
+### Autorización
+
+La **autorización** determina si el usuario autenticado tiene permisos para acceder a ciertos recursos o realizar acciones específicas.
+
+- **Roles:** (Usuario, administrador, invitado) Cada uno tiene diferentes permisos.
+- **Listas de control de acceso (ACL):** Definen qué usuarios/grupos pueden acceder a qué recursos.
+
+Ejemplo de autorización:
+```python
+if usuario.rol == 'admin':
+    # Acceso permitido
+else:
+    # Acceso denegado
+```
+
+### Buenas prácticas
+
+- No almacenar contraseñas en texto plano; usar algoritmos de hash seguros (bcrypt, Argon2).
+- Implementar expiración de sesión y protección contra CSRF.
+- Usar HTTPS para proteger la transmisión de datos sensibles.
+- Limitar el número de intentos de inicio de sesión para evitar ataques de fuerza bruta.
+
+---
+
+## Resumen
+
+- **Validar siempre los datos de entrada tanto en cliente como en servidor.**
+- **Autenticar usuarios antes de permitir el acceso a funciones sensibles.**
+- **Autorizar el acceso según roles y permisos definidos.**
+- **Aplicar buenas prácticas de seguridad y mantenerse actualizado sobre vulnerabilidades comunes.**
+
 Validación de formularios  
 Autenticación y autorización   
 
