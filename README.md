@@ -1,30 +1,47 @@
 # Temario-de-App-Web
 ## Propósito de Aprendizaje 1: Comprender los fundamentos del desarrollo de aplicaciones web.  
 <ins># 1.-Introducción al desarrollo web </ins>
-El desarrollo web es el proceso de crear sitios y aplicaciones accesibles a través de Internet. Involucra una combinación de tecnologías, lenguajes de programación y buenas prácticas para construir páginas web estáticas (contenido fijo) y dinámicas (interactividad y actualización de datos).
+El desarrollo web es el proceso de crear sitios y aplicaciones accesibles a través de internet. A lo largo de los años, ha evolucionado desde simples documentos de texto hasta complejas aplicaciones interactivas que ofrecen experiencias similares a las aplicaciones nativas.
 
-Áreas principales del desarrollo web:
+---
 
-Frontend (lado del cliente):
-Es la parte visual e interactiva con la que el usuario interactúa directamente. Se utilizan tecnologías como HTML (estructura), CSS (estilos) y JavaScript (comportamiento e interactividad).
+## Historia y Evolución del Desarrollo Web
 
-Backend (lado del servidor):
-Gestiona la lógica, almacenamiento de datos y procesamiento detrás de la web. Se utilizan lenguajes como Python, PHP, Java, Node.js, entre otros, junto con bases de datos (MySQL, MongoDB, etc.).
+- **1991:** Tim Berners-Lee publica el primer sitio web, marcando el inicio de la World Wide Web.
+- **Década de 1990:** Los sitios web eran principalmente documentos estáticos en HTML con imágenes y enlaces.
+- **Finales de los 90:** Se introduce CSS, permitiendo separar contenido y presentación.
+- **2000s:** JavaScript se populariza, permitiendo interactividad básica en las páginas web.
+- **2005:** AJAX revoluciona la web, haciendo posible la actualización de partes de una página sin recargarla por completo.
+- **Década de 2010:** Nacen los frameworks y librerías como Angular, React y Vue, facilitando el desarrollo de aplicaciones web complejas.
+- **Actualidad:** Surgen nuevas arquitecturas como las aplicaciones de página única (SPA) y aplicaciones progresivas (PWA), acercando la experiencia web a la de las aplicaciones nativas.
 
-Full Stack:
-Un desarrollador full stack domina tanto el frontend como el backend.
+---
 
-Aspectos clave:
+## Tipos de Aplicaciones Web
 
-Responsive Design: Adaptar la web a diferentes dispositivos (móviles, tablets, PCs).
-Seguridad: Proteger los datos y la información de los usuarios.
-Rendimiento: Optimizar la velocidad de carga y respuesta.
-Accesibilidad: Garantizar que todos los usuarios puedan acceder al contenido.
-Herramientas populares:
+### 1. Aplicaciones Web Estáticas
 
-Editores de código (VS Code, Sublime Text)
-Frameworks (React, Angular, Django, Laravel)
-Sistemas de control de versiones (Git/GitHub)
+- **Descripción:** Son páginas cuyo contenido no cambia dinámicamente. Cada usuario ve lo mismo.
+- **Tecnologías:** HTML, CSS.
+- **Ejemplo:** Portafolios, landing pages sencillas.
+
+### 2. Aplicaciones Web Dinámicas
+
+- **Descripción:** El contenido se genera en el servidor y puede variar según el usuario, la base de datos o la interacción.
+- **Tecnologías:** HTML, CSS, JavaScript, lenguajes del lado servidor (PHP, Python, Node.js), bases de datos.
+- **Ejemplo:** Blogs, foros, tiendas online.
+
+### 3. SPA (Single Page Application, Aplicación de Página Única)
+
+- **Descripción:** Toda la aplicación carga en una sola página y se actualiza dinámicamente sin recargar el navegador.
+- **Tecnologías:** Frameworks/librerías como React, Angular, Vue.
+- **Ejemplo:** Gmail, Trello.
+
+### 4. PWA (Progressive Web App, Aplicación Web Progresiva)
+
+- **Descripción:** Aplicaciones web que ofrecen características avanzadas como funcionamiento offline, notificaciones push y acceso a hardware, acercándose a la experiencia de una app nativa.
+- **Tecnologías:** Service Workers, Manifest, tecnologías modernas de JavaScript.
+- **Ejemplo:** Twitter Lite, Spotify Web.
 
 Historia y evolución del desarrollo web  
 Tipos de aplicaciones web (estáticas, dinámicas, SPA, PWA)  
