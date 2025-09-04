@@ -84,7 +84,27 @@ El frontend muestra la información al usuario.
 Cliente-Servidor  
 Arquitectura de tres capas (presentación, lógica, datos)  
 REST y API-first design  
-3. -Lenguajes y tecnologías fundamentales  
+3. -Lenguajes y tecnologías fundamentales
+**HTML (HyperText Markup Language):**  
+Es el lenguaje básico de marcado para crear la estructura de las páginas web. Define elementos como títulos, párrafos, enlaces, imágenes, listas y más. Es esencial para dar forma y organización al contenido.
+
+**CSS (Cascading Style Sheets):**  
+Se utiliza para definir el estilo visual de una página web: colores, fuentes, márgenes, posiciones y disposición de elementos. Permite separar el contenido (HTML) de la presentación, facilitando el diseño responsivo y atractivo.
+
+**JavaScript:**  
+Es un lenguaje de programación interpretado que añade interactividad y dinamismo a las páginas web. Permite manipular el DOM, validar formularios, animaciones, peticiones a servidores (AJAX), y la creación de aplicaciones completas en el navegador.
+
+**PHP:**  
+Es un lenguaje de programación del lado del servidor, muy usado para crear sitios web dinámicos. PHP permite recibir datos de formularios, interactuar con bases de datos, gestionar sesiones de usuario y generar contenido HTML personalizado.
+
+**MySQL:**  
+Sistema de gestión de bases de datos relacional, utilizado para almacenar y organizar datos de aplicaciones web. Se integra fácilmente con lenguajes como PHP y permite realizar operaciones como consulta, inserción, actualización y eliminación de datos mediante SQL.
+
+**Relación entre tecnologías:**  
+- HTML, CSS y JavaScript trabajan juntos en el frontend (lado del cliente).
+- PHP y MySQL suelen formar parte del backend (lado del servidor), donde PHP procesa la lógica y MySQL almacena los datos.
+- Una aplicación web típica recibe solicitudes del usuario en el frontend, las procesa en el backend y almacena/recupera información de la base de datos.  
+
 HTML, CSS, JavaScript, PHP, MySQL  
 4.-Control de versiones  
 Git y GitHub  
