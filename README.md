@@ -215,7 +215,50 @@ Mostrar los datos recibidos en la interfaz.
 
 Maquetación/Wireframe/Mockup  
 API  
-2.-Diseño e implementación del backend  
+<ins># 2.-Diseño e implementación del backend  </ins>
+Servidor
+El backend de una aplicación web es responsable de gestionar la lógica de negocio, el acceso a los datos, la autenticación y la comunicación con el frontend. El servidor es el componente que recibe las peticiones de los clientes, procesa la información y responde en consecuencia.
+
+Tecnologías populares: Node.js, Python (Django/Flask), Java (Spring), PHP, Ruby on Rails.
+El servidor se ejecuta constantemente, esperando peticiones de los clientes (navegadores, aplicaciones móviles, etc.).
+Manejo de peticiones y respuestas HTTP
+La comunicación entre el cliente y el servidor se realiza a través del protocolo HTTP:
+
+Petición HTTP: El cliente (por ejemplo, el navegador) envía una solicitud al servidor, indicando qué recurso desea o qué acción quiere realizar. Ejemplo: GET /api/productos
+Respuesta HTTP: El servidor procesa la solicitud y envía una respuesta, que puede incluir datos (normalmente en formato JSON o HTML) y un código de estado (200 OK, 404 Not Found, etc.).
+Las principales métodos HTTP son:
+
+GET: Obtener datos.
+POST: Crear datos.
+PUT/PATCH: Actualizar datos.
+DELETE: Eliminar datos.
+El backend debe manejar rutas, validaciones, autenticación y errores para cada tipo de petición.
+
+Conexión a bases de datos (MySQL, PostgreSQL, MongoDB)
+El backend suele necesitar almacenar y recuperar información de una base de datos. Entre las más populares están:
+
+MySQL/PostgreSQL: Bases de datos relacionales. Usan tablas con filas y columnas. Utilizan SQL para consultar y modificar datos.
+Ejemplo de conexión en Node.js con MySQL:
+js
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'usuario',
+  password: 'contraseña',
+  database: 'nombre_bd'
+});
+connection.connect();
+MongoDB: Base de datos NoSQL orientada a documentos. Almacena datos en formato BSON (similar a JSON).
+Ejemplo de conexión en Node.js con MongoDB:
+js
+const { MongoClient } = require('mongodb');
+const uri = 'mongodb://localhost:27017';
+const client = new MongoClient(uri);
+await client.connect();
+const db = client.db('nombre_bd');
+El backend realiza operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre la base de datos según las peticiones del cliente.
+
+
 Servidor  
 Manejo de peticiones y respuestas HTTP  
 Conexión a bases de datos (MySQL, PostgreSQL, MongoDB)  
